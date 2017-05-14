@@ -1,0 +1,156 @@
+/*
+			  [REDACTED] 
+			  Author: Doug Goldberg
+			  Date:   5/2/2017
+			  
+			  Orlando Survey
+			  
+			  Filename: ORLsurvey.css
+*/
+body{
+	
+	min-height: 100%;
+	width: 500px;
+	background-color:rgb(211,211,211); 
+
+}
+
+.mainHead{
+	
+	
+	margin-left: 10px;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+
+}
+
+
+.banner{
+
+
+
+}
+
+radioBall{
+
+	text-align:center;
+
+}
+
+
+.q{
+	
+	text-align:center;
+	background-color: rgb(0, 40, 104);
+	
+	color: rgb(255,255,255);
+	height: 25%;
+	padding-top: 50px;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 3em;
+	
+	/* Rounded edges on border of image */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius:0px;
+	
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	
+	-moz-border-top-left-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	-moz-border-bottom-left-radius: 0px;
+	-moz-border-bottom-right-radius: 0px;
+}
+
+
+
+.y{
+text-align:center;
+	background-color: blue;
+	color: white;
+	
+
+}
+
+.n{
+text-align:center;
+	background-color: blue;
+	color: white;
+
+
+}
+.q1A{
+	text-align:center;
+
+	
+	padding-top: 20px;
+	padding-bottom:20px;
+
+	background-color: white;
+	
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	font-size: 2em;
+	
+	/* Rounded edges on border of image */
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius:10px;
+	
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	
+	-moz-border-top-left-radius: 0px;
+	-moz-border-top-right-radius: 0px;
+	-moz-border-bottom-left-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+
+	
+	
+}
+
+.radioLab1{
+	color: rgb(0, 40, 104);
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	
+}
+.radioLab2{
+	color: rgb(191, 10, 48);
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	
+}
+
+
+.swipe{
+
+	float:right;
+	margin-top:50px;
+
+}
+
+
+
+.subBut{
+
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+
+	padding-left:10px;
+	padding-right:10px;
+	margin-top: 50px;
+	
+	font-size: 1.5em;
+	
+	color: rgb(0, 40, 104);
+	
+
+
+}

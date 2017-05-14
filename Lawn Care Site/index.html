@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		   <!--
+			  [REDACTED] 
+			  Author: Doug Goldberg
+			  Date:   3/3/2014
+
+			  Main HTML homepage
+				
+			  Filename: index.html
+		   -->
+			    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+			
+			    <title>[REDACTED]</title> 
+				
+			    <link href="index1.css" rel="stylesheet" type="text/css" media="only screen and (min-width:501px)"/>
+			    <link href="mobile.css" rel="stylesheet" media="only screen and (max-width: 500px)" />
+			    <link type="image/ico" rel="icon" href="favicon.ico"/>	
+		
+		            
+		            <!-- Redirect to Mobile Site iPhone/iPod -->
+		            
+		            <script language="javascript">
+				<!--
+				if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  					
+  					 location.replace("mobile.php");
+				}
+				-->
+			    </script>
+
+  			   <!-- Redirect to Mobile Site -->
+			
+			   <script type="text/javascript">
+				<!--
+				if (screen.width <= 699) {
+					if (document.referrer.indexOf(‘mobile.php’) == -1){
+						
+						document.location = “mobile.php”;
+				}}	
+				}
+				//-->
+			   </script>
+			
+						
+			   <!-- Page begins at top on reload -->			
+			   
+			   <script>
+				window.onbeforeunload = function () {
+  			
+  					window.scrollTo(0, 0);
+				}
+			   </script>
+				
+				
+			   <!-- Navigation Bar -->				
+				
+				<nav>
+					<ul>
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About</a></li>
+					  <li><a href="gallery.html">Photos</a></li>
+					  <li><a href="contact.php">Contact</a></li>
+					</ul>					
+				</nav>
+					
+				
+    	</head>
+
+	
+	<body>
+			<!-- Facebook Plugin -->
+			
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+  				var js, fjs = d.getElementsByTagName(s)[0];
+ 				
+ 				if (d.getElementById(id)) return;
+ 					 js = d.createElement(s); js.id = id;
+  				 	 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+ 					 fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+					
+		
+
+
+  			<!-- Automatic picture slideshow markup -->
+  			
+			<div class="slideshow-container">
+  			
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+    				<img src="main.jpg" class="listPic">
+    				<div class="text"></div>
+  				</div>
+
+	
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+    				<img src="photos/ListPicD.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	  	
+		
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+    				<img src="photos/ListPicE.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	
+	
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+    				<img src="photos/ListPicF.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+
+
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+   				<img src="photos/ListPicB.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+   				<img src="photos/ListPicG.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+   				<img src="photos/listPic6.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  			
+  				<div class="mySlides fade">
+    				<div class="numbertext"></div>
+   				<img src="photos/listPic5.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	
+
+	
+  				<div class="mySlides fade">
+  				<div class="numbertext"></div>
+   				<img src="photos/ListPicC.JPG" class="listPic">
+    				<div class="text"></div>
+  				</div>
+  	
+  			</div>
+			<br>
+
+			<!-- Slideshow Dots -->
+			<div style="text-align:center">
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+ 				<span class="dot"></span> 
+  				<span class="dot"></span> 
+ 				<span class="dot"></span> 
+ 				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  				<span class="dot"></span> 
+  
+			</div>
+
+			<!-- Slideshow javascript - forces automatic photo change -->
+
+			<script>
+
+				<!-- Initialize Variable, call funtion to change slide -->
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+   					 var i;
+    					 
+    					 <!-- Gets slides and dots from HTML -->
+    					 var slides = document.getElementsByClassName("mySlides");
+       					 var dots = document.getElementsByClassName("dot");
+   
+   					 <!-- change display for slides to none -->
+   					 for (i = 0; i < slides.length; i++) {
+      						 slides[i].style.display = "none";  
+   					 }
+    					 
+    					 slideIndex++;
+    
+    					 if (slideIndex> slides.length) {slideIndex = 1}    
+   					
+   					 for (i = 0; i < dots.length; i++) {
+       
+       							dots[i].className = dots[i].className.replace(" active", "");
+    					 }
+   
+   					 slides[slideIndex-1].style.display = "block";  
+   					 dots[slideIndex-1].className += " active";
+    					 
+    					 <!-- Change photo every 7 seconds -->
+    					 
+    					 setTimeout(showSlides, 7000);
+				}
+	
+			</script>	
+			
+ 			<!-- Facebook Feed and Comment Quotes -->	
+			<div class="container1">	
+				<div class="fb-post" data-href="https://www.facebook.com/[REDACTED]/posts/1943430159225726" data-width="350" data-show-				         		text="true"><blockquote cite="https://www.facebook.com/edwinsgrandslamlawncare/posts/1943430159225726" class="fb-xfbml-parse-ignore"><p>EDWIN&#039;s GrandSlam is the 			 most reliable  service through out Oviedo and all other surrounding areas. If you enjoy looking at a beautiful yard. Edwin&#039;s Grandslam can  help make it happen for you.</p>Posted by <a href="#" role="button">Mike</a> on&nbsp;<a href="https://www.facebook.com/edwinsgrandslamlawncare/posts/1943430159225726">Tuesday\</a></blockquote></div>
+ 
+ 			</div>
+ 
+ 			<div class="container2">
+ 				 <div class="fb-page" data-href="https://www.facebook.com/[REDACTED]/" data-tabs="timeline" data-width="500" data-small-		header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/edwinsgrandslamlawncare/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/edwinsgrandslamlawncare/">Edwin&#039;s Grand Slam Lawn Care</a></blockquote></div>
+  
+  			</div>
+ 
+  
+  			<div class="container3">
+  			
+  				<div class="fb-post" data-href="https://www.facebook.com/[REDACTED]/posts/1654983601403718s/1943430159225726" data-		width="350" data-show-text="false"><blockquote cite="https://www.facebook.com/edwinsgrandslamlawncare/posts/1654983601403718" class="fb-xfbml-parse-ignore"><p>Some may want to be the DIYers but people like Edwin will get the job done right! Call the PROS to get the best service around #EdwinsGrandSlamGetsThingsDone!</p>Posted by <a href="https://www.facebook.com/AHeroLawnCare/">A Hero Lawn Care and Landscapes</a> on&nbsp;<a href="https://www.facebook.com/edwinsgrandslamlawncare/posts/1654983601403718">Wednesday\</a></blockquote></div>
+	
+			</div>
+	
+	</body>
+	
+</html>

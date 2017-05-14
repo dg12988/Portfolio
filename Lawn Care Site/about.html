@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		   <!--
+			  [REDACTED]
+			  Author: Doug Goldberg
+			  Date:   3/3/2014
+			  
+			  About HTML Page
+				
+			  Filename: about.html
+			   -->
+
+			    <meta charset="UTF-8" />
+				
+			    <title>[REDACTED]</title> 
+				
+			    <link href="about.css" rel="stylesheet" type="text/css"/>
+			    <link type="image/ico" rel="icon" href="favicon.ico"/>					
+		
+		          
+		           <!-- Redirect to Mobile Site iPhone/iPod -->
+		            
+		            <script language="javascript">
+				<!--
+				if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+  					
+  					 location.replace("mobile.php");
+				}
+				-->
+			    </script>
+
+  			   <!-- Redirect to Mobile Site -->
+			
+			   <script type="text/javascript">
+				<!--
+				if (screen.width <= 699) {
+					if (document.referrer.indexOf(‘mobile.php’) == -1){
+						
+						document.location = “mobile.php”;
+				}}	
+				}
+				//-->
+			   </script>
+			
+						
+			   <!-- Page begins at top on reload -->			
+			   
+			   <script>
+				window.onbeforeunload = function () {
+  			
+  					window.scrollTo(0, 0);
+				}
+			   </script>
+				
+				
+			   <!-- Navigation Bar -->				
+				
+				<nav>
+					<ul>
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">About</a></li>
+					  <li><a href="gallery.html">Photos</a></li>
+					  <li><a href="contact.php">Contact</a></li>
+					</ul>					
+				</nav>
+
+				
+    </head>
+	
+	
+	<body>
+		
+		<aside>
+			
+			<!-- Photo Declaration -->
+			
+			<img class="picLeft" src="play1.jpg" alt""/> 
+			<img class="truck" src="truck.jpg" alt""/> 
+			<img class="picRight" src="play2.jpg" alt""/> 
+			
+			
+			<!-- Main Body of Text -->
+			<p class="center"> <b>Get it all done, bring it all home with [REDACTED]!</b></br></p>
+				
+			<p>
+				<b>Guaranteed</b> to beat what you pay for lawn service in order to earn your business while also providing the most <b>comprehensive 	lawn care</b> and service at the <b>most affordable pricing</b>.</br></br>
+				
+				Increase the effect of aesthetics on your <b>beautiful home</b> with a <b>beautiful lawn</b> to surround it.
+				Do you need your lawn treated and maintained? Need a tree trimmed or weeds removed and exterminated?
+				Need your grass cut or your bushes clipped and shaped? Score an all in one lawn service otherwise known as a <b>Grand Slam</b> in Lawn Care.</br></br>
+				
+				<b>[REDACTED]</b> does it all, at an affordable rate <b>GUARANTEED</b> to beat other lawn care services including what you may be paying your current service provider.
+				Cut costs and expenses while still getting the best and most comprehensive lawn service by switching to <b>[REDACTED]</b> and calling us for your immediate lawn servicing needs.</br></br></p>
+				
+				<p class="center">Please call <strong>407-924-6095</strong> to discuss services and other inquiries.</br></br></p>
+				
+				<p>Remember, Spring is around the corner and this is the season to keep your lawn looking the best. Score the most for your buck with <b>[REDACTED]</b>. WE WILL beat the price that you currently pay for Lawn Service.</p
+			
+			
+		</aside>
+			
+	</body>
+	
+	
+	
+</html>

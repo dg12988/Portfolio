@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+  			<title>Orlando Survey</title>
+    
+    			<meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1,maximum-scale=1"/>
+    			<link type="image/ico" rel="icon" href="icon.jpg"/>	
+       
+       			<!-- JQuery Include -->
+       			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> 
+        		
+        		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+       			<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+       			       			
+			<!-- CSS Include -->      			
+       			<link href="ORLsurvey.css" rel="stylesheet" type="text/css"/>
+		</head>
+
+		
+		<body>
+  			
+  			<!-- Begin Page 1 -->
+  			
+  			<div data-role="page" id="question1">
+   			
+   				<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+       			
+       					<div class="banner"><h1 class="mainHead">AmeriCourts - Orlando Survey</h1></div>
+    				</div>
+    			
+    				<!-- Page 1 Content -->
+    			
+    				<div data-role="content">
+     				
+     					<!-- Wrapper for Questions -->
+     					<div class="q">
+     				
+     					<p>Do you play basketball?</p>
+     				
+     					</div>
+     				
+     					<!-- Wrapper for Answers-->
+     					<div class="q1A">
+  				   
+  				   		<!-- Form for Question 1 -->
+  						<form id="form1" name="form1" method="POST" action="resultsPage.php">
+
+							<label>
+  							<input type="radio" class="radioBall" value="YES" name="q1" checked>
+   							<label for="q1" class="radioLab1">Yes</label>	
+							</label>	
+							
+							<label>				
+  							<input type="radio" class="radioBall" value="NO" name="q1">
+   							<label for="q1" class="radioLab2">No</label>	
+ 							</label>
+						</form>
+
+				 
+  					<img class="swipe" src="swipe.jpg">
+     					
+     					</div>
+     				</div>
+  			</div>
+
+			<!-- Begin Page 2 -->
+			
+  			<div data-role="page" id="question2">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     			
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>How many times a month do you play basketball?</p>
+     				<div class="ball"></div>
+     			</div>
+     				
+     				<div class="q1A">
+     				
+     				
+     				<form id="form2" name="form2" method="POST" action="resultsPage.php">
+     						   
+     						  <label>
+     						   <input type="radio"  value="0" name="q2" checked>
+  						   <label for="q2" class="radioLab1">Never</label>
+  						    </label>
+  						     <label>
+  						   <input type="radio"  value="1-2" name="q2">
+  						   <label for="q2" class="radioLab2">1-2</label>
+ 						    </label>
+ 						     <label>
+ 						   <input type="radio" value="3-5" name="q2">
+ 						   <label for="q2" class="radioLab1">3-5</label>
+  						    </label>
+  						     <label>
+  						   <input type="radio"  value="5-10" name="q2">
+  						   <label for="q2" class="radioLab2">5-10</label>
+  						    </label>
+  						   <label>
+  						   <input type="radio" value="10+" name="q2">
+  						   <label for="q2" class="radioLab1">More than 10</label>
+  						 </label>
+					
+					
+				</form>
+					<img class="swipe" src="swipe.jpg">
+     				</div>
+   			</div>
+ 			</div>
+
+			<!-- Begin Page 3 -->
+			
+ 			<div data-role="page" id="question3">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     		
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>Do you have a gym membership?</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				<form id="form3" name="form3" method="POST" action="resultsPage.php" >
+    					 	
+    					 	 <label>
+    					 	<input type="radio" class="radioBall" value="YES" name="q3" checked>
+   						<label for="q3" class="radioLab1">Yes</label>
+  						</label>
+  						
+  						 <label>
+  						<input type="radio" class="radioBall" value="NO" name="q3">
+    						<label for="q3" class="radioLab2">No</label>
+    						</label>
+     				</form>
+     				
+     				<img class="swipe" src="swipe.jpg">
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 4 -->
+ 			
+ 			<div data-role="page" id="question4">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     			
+      			<div class="banner"><h1 class="mainHead"> Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>Choose the cost of your monthly gym membership.</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				<form id="form4" name="form4" method="POST" action="resultsPage.php" >     				
+    						   
+    						    <label>
+    						   <input type="radio"  value="$0" name="q4" checked>
+  						   <label for="q4" class="radioLab1">No Membership</label>
+ 						   </label>
+ 						   
+ 						    <label>
+ 						   <input type="radio" value="$10-$20" name="q4">
+ 						   <label for="q4" class="radioLab2">$10 - $20</label>
+  						   </label>
+  						   
+  						    <label>
+  						   <input type="radio"  value="$20-$30" name="q4">
+  						   <label for="q4" class="radioLab1">$20 - $30</label>
+  						   </label>
+  						   
+  						   
+  						    <label>
+  						   <input type="radio" value="$30-$50" name="q4">
+  						   <label for="q4" class="radioLab2">$30 - $50</label>
+  						   </label>
+  						   
+  						    <label>
+  						   <input type="radio" value="$50+" name="q4">
+  						   <label for="q4" class="radioLab1">More than $50</label>
+  						   </label>
+     				</form>			
+     				<img class="swipe" src="swipe.jpg">
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 5 -->
+ 			
+ 			<div data-role="page" id="question5">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     			
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>Would an inclusive basketball club be an interesting idea to you?</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				
+     				<form id="form5" name="form5" method="POST" action="resultsPage.php" >
+    					 	
+    					 	 <label>
+    					 	<input type="radio" class="radioBall" value="YES" name="q5" checked>
+   					 	<label for="q5" class="radioLab1">Yes</label>
+  					 	</label>
+  					 	
+  					 	 <label>
+  					 	<input type="radio" class="radioBall" value="NO" name="q5">
+    					 	<label for="q5" class="radioLab2">No</label>
+    					 	</label>
+     				</form>
+     				
+     				<img class="swipe" src="swipe.jpg">
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 6 -->
+ 			
+ 			<div data-role="page" id="question6">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     		
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>What level of play do you participate in most often?</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				
+     				<form id="form6" name="form6" method="POST" action="resultsPage.php" >
+    					    
+    					     <label>
+    					    <input type="radio"  value="Team" name="q6" checked>
+  					    <label for="q6" class="radioLab1">Team Ball (High School or College)</label>
+ 					    </label>
+ 					    
+ 					    
+ 					     <label>
+ 					    <input type="radio" value="League" name="q6">
+ 					    <label for="q6" class="radioLab2">League Ball</label>
+  					    </label>
+  					    
+  					    
+  					     <label>
+  					    <input type="radio"  value="Full Court" name="q6">
+  					    <label for="q6" class="radioLab1">Full Court Pickup</label>
+  					   </label>
+  					   
+  					    <label>
+  					    <input type="radio" value="Half Court" name="q6">
+  					    <label for="q6" class="radioLab2">Half Court Pickup</label>
+  					    </label>
+  					    
+  					     <label>
+  					    <input type="radio" value="None" name="q6">
+  					    <label for="q6" class="radioLab1">I Do Not Play</label>
+  					    </label>
+     				</form>			
+     				<img class="swipe" src="swipe.jpg">
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 7 -->
+ 			
+ 			<div data-role="page" id="question7">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     		
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>Do you prefer to play basketball Indoor or Outdoor?</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				<form id="form7" name="form7" method="POST" action="resultsPage.php" >
+    					    
+    					     <label>
+    					    <input type="radio"  value="Indoor" name="q7" checked>
+  					    <label for="q7" class="radioLab1">Indoor</label>
+ 					   </label>
+ 					    <label>
+ 					    <input type="radio" value="Outdoor" name="q7">
+ 					    <label for="q7" class="radioLab2">Outdoor</label>
+  					   </label>
+  					    <label>
+  					    <input type="radio"  value="Neither" name="q7">
+  					    <label for="q7" class="radioLab1">I Do Not Play</label>
+  					    </label>	
+     				</form>	
+     				
+     				<img class="swipe" src="swipe.jpg">		
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 8 -->
+ 			
+ 			<div data-role="page" id="question8">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     			
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>How old are you?</p>
+     			</div>
+     				<div class="q1A">
+     				
+     				<form id="form8" name="form8" method="POST" action="resultsPage.php" >
+     				
+    					
+    					 <label>
+    					<input type="radio"  value="10-20" name="q8" checked>
+  					<label for="q8" class="radioLab1">10 yrs - 20 yrs</label>
+ 					</label>
+ 					 <label>
+ 					<input type="radio" value="20-30" name="q8">
+ 					<label for="q8" class="radioLab2">20 yrs - 30 yrs</label>
+  					</label>
+  					 <label>
+  					<input type="radio"  value="30-40" name="q8">
+  					<label for="q8" class="radioLab1">30 yrs - 40 yrs</label>
+  					 </label>
+  					 
+  					 <label>
+  					<input type="radio" value="40-50+" name="q8">
+  					<label for="q8" class="radioLab2">40 yrs - 50+ yrs</label>
+  					</label>
+  					 <label>
+  					<input type="radio" value="Decline" name="q8">
+  					<label for="q8" class="radioLab1">Decline to Answer</label>
+     					</label>
+     				</form>			
+     				
+     				<img class="swipe" src="swipe.jpg">
+     				
+     				</div>
+     				
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 9 -->
+ 			<div data-role="page" id="question9">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     		
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>What is your gender?</p>
+     			</div>
+     				<div class="q1A">
+     			
+     				<form id="form9" name="form9" method="POST" action="resultsPage.php">
+    					
+    					<label>
+    					<input type="radio"  value="Male" name="q9" checked>
+  					<label for="q9" class="radioLab1">Male</label>
+ 					</label>
+ 					
+ 					<label>
+ 					<input type="radio" value="Female" name="q9">
+ 					<label for="q9" class="radioLab2">Female</label>
+  					</label>
+  					
+  					<label>
+  					<input type="radio"  value="Other" name="q9">
+  					<label for="q9" class="radioLab1">Other</label>
+  					</label>
+  					
+  					<label>
+  					<input type="radio" value="Decline" name="q9">
+  					<label for="q9" class="radioLab2">Decline to Answer</label>
+  					</label>
+  					
+     				</form>			
+     				
+     				<img class="swipe" src="swipe.jpg">
+     				
+     				</div>
+   			</div>
+ 			</div>
+ 			
+ 			<!-- Begin Page 10 -->
+ 			
+ 			<div data-role="page" id="question10">
+    			<div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+     			
+      			<div class="banner"><h1 class="mainHead">Orlando Survey</h1></div>
+    			</div>
+   			<div data-role="content">
+     			<div class="q">
+     				<p>What is your favorite sport?</p>
+     			</div>
+     				<div class="q1A">
+     				<form id="form10" name="form10" method="POST" action="resultsPage.php">
+     					
+     					 <label>
+     					<input type="radio"  value="Basketball" name="q10" checked>
+  					<label for="q10" class="radioLab1">Basketball</label>
+ 					</label>
+ 					
+ 					<label>
+ 					<input type="radio" value="Football" name="q10">
+ 					<label for="q10" class="radioLab2">Football</label>
+  					</label>
+  					 
+  					<label>
+  					<input type="radio"  value="Soccer" name="q10">
+  					<label for="q10" class="radioLab1">Soccer</label>
+  				    	</label>
+  				    	
+  				    	<label>
+  					<input type="radio"  value="Baseball" name="q10">
+  					<label for="q10" class="radioLab2">Baseball</label>
+  				    	</label>
+  				    	
+  				    	<label>
+  					<input type="radio"  value="Hockey" name="q10">
+  					<label for="q10" class="radioLab1">Hockey</label>
+  				    	</label>					
+  				    	
+  				    	<label>
+  					<input type="radio"  value="Other" name="q10">
+  					<label for="q10" class="radioLab2">Other</label>
+  				    	</label>		     					
+     				</form>	
+     				
+     		<button id="subBut" class="subBut">Complete Survey</button>
+ 		
+ 		
+ 				<!-- When the Submit Button is clicked, send all form data to resultsPage.php -->
+ 				<script>
+ 				
+					$("#subBut").click(function() {
+				
+						<!-- disable click on button after first click. Prevents multiple submits. -->
+							
+   					 	 $(this).prop('disabled', true);
+ 						
+ 						<!-- Store the user answers from each question and formulate in a single variable -->
+ 						
+  						  var dataString = $("#form1, #form2, #form3, #form4, #form5, #form6, #form7, #form8, #form9, #form10").serialize();
+    
+    						 <!-- Log results in console -->
+    					 
+    						 console.log(dataString);
+
+    						<!-- AJAX : Send dataString to resultPage.php using POST. If successful, load surveyEnd.html-->
+    					
+   						 $.ajax( {
+    							    type: 'POST',
+      							    url: 'resultsPage.php',
+       							    data: dataString,
+        						    success: function(data) {
+            								console.log(data);
+            							            							
+            								setTimeout(function() {
+  										window.location.href = "surveyEnd.html";
+									}, 500);
+        				   		    }
+    				 			});
+    				 
+    				 	
+					});
+ 		
+ 				</script>
+					
+					</div>
+				</div>
+			</div>
+ 		</body>
+		
+
+
+		<!-- JQuery - Swipe Left or Right to access questions #1 - #10 -->
+		
+		<script>
+			
+			<!-- Next Question -->
+			
+			$(document).on('swipeleft', '.ui-page', function(event){    
+   				
+   				 if(event.handled !== true) <!-- Only trigger once -->
+   			 	 {    
+    			    		var nextpage = $.mobile.activePage.next('[data-role="page"]');
+     			  
+     			  		<!-- Swipe to next page -->
+     			  
+     			   		if (nextpage.length > 0) {
+      			     			$.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+       			 		}
+       			
+       					event.handled = true;
+   			 	 }
+   			 
+   				 return false;         
+			});
+
+
+			<!-- Previous Question -->
+			
+			$(document).on('swiperight', '.ui-page', function(event){     
+    			
+    				 if(event.handled !== true) <!-- Only trigger once -->
+   				 {      
+      			 
+      			 		 var prevpage = $(this).prev('[data-role="page"]');
+       			 
+       					<!-- Swipe to previous page -->
+       			 
+       			 		if (prevpage.length > 0) {
+         					 $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+       			 		}
+      			  
+      			  		event.handled = true;
+  			  	 }
+   			 
+   			 	return false;            
+			});
+		</script>
+
+	</html>
