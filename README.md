@@ -1,3 +1,5 @@
-# Portfolio
-Web Development Portfolio for Doug Goldberg.
-Each project has its own README in the project folder.
+# Lawn Care Site and Demographic Survey
+
+
+1. HTML/CSS/Javascript/PHP
+2. Demographic survey utilizes AJAX serialization
